@@ -16,6 +16,7 @@ public class Product {
     private String name;
     private String description;
     private BigDecimal price;
+    private String couponCode;
 
     public Long getId() {
         return id;
@@ -49,6 +50,14 @@ public class Product {
         this.price = price;
     }
 
+    public String getCouponCode() {
+        return couponCode;
+    }
+
+    public void setCouponCode(String couponCode) {
+        this.couponCode = couponCode;
+    }
+
     @Override
     public String toString() {
         return "Product{" +
@@ -56,6 +65,7 @@ public class Product {
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", price=" + price +
+                ", couponCode='" + couponCode + '\'' +
                 '}';
     }
 }
